@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="HSK 3 Standard Course — read all 20 lessons with the official audio. Tap any word for its pinyin and English meaning.">
+<title>HSK 3 · 标准教程 Standard Course</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="#/">
+    <span class="logo" aria-hidden="true">汉</span>
+    <span class="brand-text">
+      <span class="brand-title">HSK 3 · 标准教程</span>
+      <span class="sub">20 lessons · 80 texts · official audio</span>
+    </span>
+  </a>
+
+  <div class="tools">
+    <button id="t-mark" class="tool toggle" type="button" aria-pressed="true">
+      <span class="tool-label">Highlight</span>
+    </button>
+    <button id="t-pinyin" class="tool toggle" type="button" aria-pressed="false">
+      <span class="tool-label">拼音</span>
+    </button>
+    <button id="t-english" class="tool toggle" type="button" aria-pressed="false">
+      <span class="tool-label">English</span>
+    </button>
+    <span class="sizer" role="group" aria-label="Text size">
+      <button id="fs-dec" class="tool icon" type="button" aria-label="Decrease text size">A−</button>
+      <button id="fs-inc" class="tool icon" type="button" aria-label="Increase text size">A+</button>
+    </span>
+    <button id="t-theme" class="tool icon" type="button" aria-label="Toggle dark mode">◐</button>
+    <a class="tool link" href="https://mdmohsin109.github.io/hsk3-review/" target="_blank" rel="noopener">
+      <span class="tool-label">600 词复习</span> ↗
+    </a>
+  </div>
+</header>
+
+<main id="app" class="app"></main>
+
+<div id="tip" class="tip" role="tooltip" hidden>
+  <button class="tip-close" id="tip-close" type="button" aria-label="Close">×</button>
+  <div class="tip-head">
+    <span class="tip-hanzi" id="tip-hanzi"></span>
+    <span class="tip-py" id="tip-py"></span>
+  </div>
+  <ul class="tip-senses" id="tip-senses"></ul>
+</div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
